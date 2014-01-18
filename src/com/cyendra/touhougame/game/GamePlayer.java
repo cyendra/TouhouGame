@@ -19,6 +19,7 @@ public class GamePlayer extends GameCharacter implements KeyInter {
 		super();
 		playerImage = img;
 		hpImage=hpimg;
+		this.setHp(5);
 		this.setPos(GameFrame.WIDTH/2,GameFrame.HEIGHT/8*7);
 	}
 
@@ -48,7 +49,9 @@ public class GamePlayer extends GameCharacter implements KeyInter {
 				count=0;
 			}
 		}
-
+		for (int i=0;i<hp;i++) {
+			g.drawImage(hpImage, i*hpImage.getWidth(null)+10, GameFrame.HEIGHT-hpImage.getHeight(null)-10, null);
+		}
 	}
 
 	@Override

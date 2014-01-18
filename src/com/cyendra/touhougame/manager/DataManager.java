@@ -19,7 +19,7 @@ public class DataManager {
 			for (int i=0;i<10;i++) {
 				imgPlayer[i] = ImageIO.read(new File("graphics\\player\\player"+i+".png"));
 			}
-			imgPlayerHp = ImageIO.read(new File("graphics\\player\\life.png"));
+			imgPlayerHp = ImageIO.read(new File("graphics\\player\\hp.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
