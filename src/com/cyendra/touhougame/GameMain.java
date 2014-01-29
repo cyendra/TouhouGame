@@ -8,5 +8,5 @@ public class GameMain {
 		GameFrame f = new GameFrame();
 		f.setVisible(true);
 	}
-
+	//well done
 }
